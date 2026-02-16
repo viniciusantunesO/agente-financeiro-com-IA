@@ -19,6 +19,14 @@
 
 Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt
 
+```python
+import json
+import pandas as pd
+
+perfil=json.loaD(open('./data/perfil_investidor.json'))
+transacoes=pd.read_csv('./data/transacoes.csv')
+```
+
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
