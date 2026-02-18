@@ -1,31 +1,24 @@
-# Código da Aplicação
+# Passo a passo da Aplicação
 
 Esta pasta contém o código do seu agente financeiro.
 
-## Estrutura Sugerida
+## Setup do ollama
+```bash
+#1.Instalar o ollama
+#2.baixar um modelo leve
+ollama pull gpt-oss
 
-```
-src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
+#3.Testar se funciona]
+ollama run gpt-oss "Ola"
 ```
 
-## Exemplo de requirements.txt
+## Codigo fonte
 
-```
-streamlit
-openai
-python-dotenv
-```
+Todo o codigo fonte esta aqui: `app.py`
 
 ## Como Rodar
 
 ```bash
-# Instalar dependências
-pip install -r requirements.txt
 
-# Rodar a aplicação
-streamlit run app.py
+streamlit run .\src\app.py
 ```
